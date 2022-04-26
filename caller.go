@@ -19,8 +19,8 @@ const (
 )
 
 func (c *Client) GraphQuery(query string) (resp *http.Response, errResp error) {
-	GraphqlData := strings.NewReader(query)
-	req, errReq := http.NewRequest("POST", c.EndPoint, GraphqlData)
+	qlData := strings.NewReader(query)
+	req, errReq := http.NewRequest("POST", c.EndPoint, qlData)
 	if errReq != nil {
 		return nil, errReq
 	}
