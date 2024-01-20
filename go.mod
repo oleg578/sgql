@@ -1,3 +1,3 @@
 module github.com/oleg578/sgql
 
-go 1.18
+go 1.21.6
